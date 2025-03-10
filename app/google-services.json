@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574625433350",
+    "project_id": "logincibo-cd87e",
+    "storage_bucket": "logincibo-cd87e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574625433350:android:d77584351c24a77a6fc087",
+        "android_client_info": {
+          "package_name": "com.example.mealapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuHgCIpOG2VJbC7y6lnEiQLLNRJbgywxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
