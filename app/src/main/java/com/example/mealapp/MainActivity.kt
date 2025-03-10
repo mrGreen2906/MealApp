@@ -32,13 +32,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.*
-import com.airbnb.lottie.compose.LottieAnimation
-import com.airbnb.lottie.compose.LottieCompositionSpec
-import com.airbnb.lottie.compose.animateLottieCompositionAsState
-import com.airbnb.lottie.compose.rememberLottieComposition
 import kotlinx.coroutines.delay
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -79,38 +74,6 @@ fun MealApp() {
         }
     }
 }
-
-@Composable
-fun WelcomeScreen(onStartClick: () -> Unit) {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.Black) // Puoi anche aggiungere un'immagine come sfondo qui
-    ) {
-        // Puoi sostituire questa parte con un'immagine di benvenuto
-        Image(
-            painter = painterResource(id = R.drawable.background_banana), // Aggiungi una tua immagine qui
-            contentDescription = "Banana",
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
-        )
-
-        Column(
-            modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .padding(32.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Button(
-                onClick = onStartClick,
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFFC107))
-            ) {
-                Text("Banana!!", color = Color.White, fontSize = 20.sp)
-            }
-        }
-    }
-}
-
 
 object RetrofitInstance {
     private const val BASE_URL = "https://www.themealdb.com/api/json/v1/1/"
